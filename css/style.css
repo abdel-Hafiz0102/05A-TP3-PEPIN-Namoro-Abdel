@@ -5,7 +5,7 @@
 ========================================================================== */
 
 body{
-	background-color: red;
+	background-color: white;
 	
 }
 
@@ -21,7 +21,31 @@ body{
 
 /* Header / Navigations / Footer 
 ========================================================================== */
+.logo a {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    background-color: #bdefff;
+}
 
+.logo a:hover,
+.logo a:focus {
+    background-color: #ffffff;
+}
+
+
+.entete-site,
+.pied-site {
+    background-color: #193f43;
+}
+
+.entete-contenu
+ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
 
 
 /* Composantes générales (exemples : section, cartes, tableaux, etc.)
