@@ -16,12 +16,14 @@
 
 <body>
 
-	<header>
+	<header class=entete-site>
 		<div class="container entete-contenu">
 
 			<div class="logo">
 				<a href="index.html">
-					<span img = "img/equigest-logo.png"></span>
+
+					<img src="img/equigest-logo.png" alt="Acceuil">
+
 				</a>
 			</div>
 
@@ -36,58 +38,65 @@
 	</header>
 
 
-	<main class="container">
+	<main class="container accueil">
+    <h1>Une équipe, une gestion simplifiée!</h1>
 
-		<section>
+    <div class="accueil-colonnes">
 
-			<ul class="list-image">
+        <!-- Colonne gauche : deux photos et le formulaire -->
+        <div class="colonne-accueil">
+            <div class="rangee-images">
+                <img src="img/employes/employe-1.jpg" alt="">
+                <img src="img/employes/employe-2.jpg" alt="">
+            </div>
 
-				<li img="#" alt="##"> </li>
-				<li img="#" alt="##"> </li>
-				<li img="#" alt="##"> </li>
+            <form class="connexion" aria-labelledby="titre-connexion">
+                <h2 id="titre-connexion">Connexion</h2>
 
-				<div>
-					<form action=""></form>
+                <label for="courriel">Courriel</label>
+                <input type="email" id="courriel" name="courriel">
 
-				</div>
+                <label class="souvenir">
+                    <input type="checkbox" name="souvenir">
+                    Se souvenir de moi
+                </label>
 
-			</ul>
+                <button type="button">Se connecter</button>
+            </form>
+        </div>
 
-		</section>
+        <!-- Colonne droite : la grande photo et deux petites photos -->
+        <div class="colonne-accueil">
+            <img class="image-principale"
+                 src="img/employes/employe-3.jpg" alt="">
 
-		<footer class ="pied du site ">
+            <div class="rangee-images">
+                <img src="img/employes/employe-4.jpg" alt="">
+                <img src="img/employes/employe-5.jpg" alt="">
+            </div>
+        </div>
 
-			<div class="container">
-				<div class="ligne pied-contenu">
-
-
-
-
-
-				</div> 
-
-			</div>
-
-
-
-		</footer>
-
-		
-
-
-
-
-
+    </div>
+</main>
 
 
-	</main>
+	<footer class="pied-site">
+    <div class="container">
+        <div class="pied-contenu">
+            <p>© ÉquiGest · 1600, boulevard de l’Entente</p>
 
+            <a class="pied-telephone" href="tel:+15819228689">
+                581-922-8689
+            </a>
+        </div>
 
-
-
-
-
-
+        <p class="pied-credits">
+            Site réalisé par Hafiz Namoro |
+            Dans le cadre du cours Interfaces Web |
+            <a href="https://cegepgarneau.ca/">Cégep Garneau</a>
+        </p>
+    </div>
+</footer>
 
 
 

@@ -25,18 +25,54 @@ body{
     display: inline-block;
     padding: 12px 24px;
     text-decoration: none;
-    background-color: #bdefff;
+   
 }
 
-.logo a:hover,
-.logo a:focus {
-    background-color: #ffffff;
+.logo img
+ {
+    display:block;
+    width: 140px;
+    height: auto;
 }
 
 
-.entete-site,
+.entete-site {
+    background-color:rgb(229, 200, 35);
+
+}
 .pied-site {
-    background-color: #193f43;
+    background-color: rgb(229, 200, 35);
+    color: white;
+}
+
+.pied-contenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 14px 0;
+}
+
+.pied-contenu p {
+    margin: 0;
+}
+
+.pied-site a {
+    color: white;
+}
+
+.pied-telephone {
+    border: 1px solid white;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+
+.pied-credits {
+    margin: 0;
+    border-top: 1px solid white;
+    padding: 12px 0;
+    text-align: center;
 }
 
 .entete-contenu
@@ -44,9 +80,21 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
+    padding: 12px 0;
 }
 
+
+.navigation-accueil{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.navigation-accueil a {
+    color:rgb(13, 120, 234); 
+}
 
 /* Composantes générales (exemples : section, cartes, tableaux, etc.)
 ========================================================================== */
@@ -62,3 +110,78 @@ body{
 ========================================================================== */
 /* À utiliser seulement si nécessaire. Les règles de styles devraient être 
 toujours le plus général / réutilisable possible*/
+.accueil {
+    padding: 24px 0;
+}
+
+.accueil h1 {
+    margin: 0 0 16px;
+}
+
+.accueil-colonnes {
+    display: grid;
+    grid-template-columns: minmax(0, 4fr) minmax(0, 5fr);
+    gap: 16px;
+}
+
+.colonne-accueil {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.rangee-images {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.rangee-images img,
+.image-principale {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.rangee-images img {
+    aspect-ratio: 4 / 3;
+}
+
+.image-principale {
+    flex: 1;
+    height: 0;
+    min-height: 240px;
+}
+
+.connexion {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #e8f1f2;
+}
+
+.connexion h2 {
+    margin: 0 0 6px;
+}
+
+.connexion input[type="email"],
+.connexion input[type="password"],
+.connexion button {
+    font: inherit;
+    padding: 8px 12px;
+}
+
+.connexion button {
+    align-self: flex-start;
+    border: 0;
+    background-color: #193f43;
+    color: white;
+}
+
+@media (max-width: 650px) {
+    .accueil-colonnes {
+        grid-template-columns: 1fr;
+    }
+}
